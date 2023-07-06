@@ -1,0 +1,41 @@
+#!/bin/bash
+
+set -euo pipefail  # Enable error checking
+
+function show_help {
+  echo "Usage: dtos [Option] [.mkv, .mp4 or .mp3 ... or any 3 char format files]"
+  echo ""
+  echo "Options:"
+  echo "  -h, --help       Show this help message"
+  echo "  -v, --version    Show version information"
+}
+
+if [ $# -eq 0 ]; then
+  show_help
+  exit 1
+fi
+
+case $1 in
+    -h|--help)
+      show_help
+      exit 1
+      ;;
+    -v|--version)
+      echo "dtos version 1.0"
+      exit 1 
+      ;;
+esac
+
+for name in $@; do
+  if [[ "$name" != *.* ]]; then
+    # Skip files without an extension
+    continue
+  fi
+
+  new_name="${name%.*}"
+  suffix="${name##*.}"
+  new_name="${new_name//./ }"
+  new_name+=".$suffix"
+
+  mv -n "$name" "$new_name"
+done
