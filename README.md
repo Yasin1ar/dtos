@@ -33,4 +33,4 @@ For example, a file named `my.video.file.mkv` will be renamed to `my video file.
 
 I also got reverse script for it, that exactly does the opposite job.
 
-check out [stod](https://github.com/Yasin1ar/dtos/stod) if you want to change your spaces to dot again.
+check out [stod](https://github.com/Yasin1ar/dtos/tree/main/stod) if you want to change your spaces to dot again.
