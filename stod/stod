@@ -27,8 +27,8 @@ case $1 in
 esac
 
 for name in "$@"; do
-  if [[ "$name" == .*. ]]; then
-    # Skip files with an extension
+  if [[ "$name" != *.* ]]; then
+    # Skip files without an extension
     continue
   fi
 
