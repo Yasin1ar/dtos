@@ -1,6 +1,6 @@
 # Bash Script for Renaming Files with spaces to dots
 
-This *simple* bash script exactly does the opposite of[dtos](https://github.com/Yasin1ar/dtos)
+This *simple* bash script exactly does the opposite of  [dtos](https://github.com/Yasin1ar/dtos)
 
 ## How to Use
 
