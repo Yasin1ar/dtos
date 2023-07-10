@@ -11,6 +11,12 @@ This *simple* Bash script is designed to rename files with dots in their names t
 <img src="pics/S2.png" alt="before dtos-ing" width="500" height="60">
 
 ##### after dtos-ing :)
+
+
+
+## PLEAS ATTENTION : only use this script with linux filesystem, btrfs or Ext4 ..., using this script for your external storage that doesn't have linux filesystem, which is very common, because most of them use NTFS, will cost you damage some of your files and may lost them permanently. use [pystyler](https://github.com/Yasin1ar/dtos/tree/main/pystyler) as an alternative.
+
+
 ## How to Use
 
 1. Download the script to your local machine.
@@ -28,7 +34,6 @@ For example, a file named `my.video.file.mkv` will be renamed to `my video file.
 
 **./dtos  'my.video.file.mkv'**
 
-## PLEAS ATTENTION : only use this script with linux filesystem, btrfs or Ext4 ..., using this script for your external storage that doesn't have linux filesystem, which is very common, because most of them use NTFS, will cost you damage some of your files and may lost them permanently.
 
 # stod
 
